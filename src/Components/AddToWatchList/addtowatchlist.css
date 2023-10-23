@@ -1,0 +1,36 @@
+.add-to-watchlist {
+    display: flex;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+.watch-later-eye {
+    background-color: transparent;
+    color: var(--white);
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size: 20px;
+}
+.watch-later-eye:active {
+    scale: 1.2;
+}
+
+.watch-later {
+    transition: all 1s;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 25px;
+    background-color: var(--black);
+    padding: 0.3rem;
+    white-space: nowrap;
+    right: -5px;
+    border: none;
+    color: var(--purple);
+    border-radius: 5px;
+}
+button.watch-later-eye:hover + .watch-later {
+    opacity: 1;
+    visibility: visible;
+}

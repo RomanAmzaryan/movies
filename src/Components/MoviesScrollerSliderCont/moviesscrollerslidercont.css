@@ -1,0 +1,10 @@
+.second_slider_page {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+}
+.scroller-slider-title {
+    font-family: var(--font-family-neon);
+    color: var(--white);
+    font-size: 25px;
+}

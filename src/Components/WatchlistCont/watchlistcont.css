@@ -1,0 +1,84 @@
+.watchlist-cont {
+    position: absolute;
+    top: 100px;
+    width: 400px;
+    z-index: 555;
+    border-radius: 12px;
+    padding: 1rem;
+    color: var(--white);
+    font-size: 25px;
+    right: 110px;
+    min-height: 200px;
+    max-height: 600px;
+    overflow-y: auto;
+    background-color: var(--dark-transparent);
+    animation: watchList 1s;
+}
+.watchlist-cont::-webkit-scrollbar {
+    width: 3px;
+}
+.watchlist-cont::-webkit-scrollbar-track {
+    background: var(--dark);
+}
+.watchlist-cont::-webkit-scrollbar-thumb {
+    background-color: var(--purple);
+    height: 8px;
+}
+.watch-later-title {
+    font-family: var(--font-family-neon);
+    color: var(--white);
+    font-size: 18px;
+}
+.watchlist {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 12px;
+    gap: 0.5em;
+}
+.watchlist-movie {
+    width: 180px;
+    padding: 1rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--darkest-transparent);
+    backdrop-filter: blur(20px);
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+.watchlist-movie-img {
+    width: 150px;
+    cursor: pointer;
+}
+.watchlist-movie-img img {
+    width: 100%;
+}
+
+.watchlist-movie-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 14px;
+}
+.watchlist-movie-info > span {
+    color: var(--white);
+}
+
+.del-btn {
+    position: absolute;
+    top: 15px;
+    border: none;
+    background-color: var(--light-purple);
+    padding: 0.5rem 1rem;
+    color: var(--white);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+    transition: all 1s;
+    font-family: var(--font-family-neon);
+}
+.del-btn:hover {
+    background-color: var(--purple);
+}

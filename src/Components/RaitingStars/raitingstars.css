@@ -1,0 +1,28 @@
+.rating-stars-cont {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: start;
+}
+.raiting-stars {
+    display: flex;
+    column-gap: 5px;
+    justify-content: start;
+    align-items: center;
+}
+.star {
+    color: var(--white);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.star:not(.rate):hover {
+    scale: 1.1;
+    color: yellow;
+}
+.rate {
+    color: var(--purple);
+}
+.rating {
+    font-family: var(--font-family-neon);
+    color: var(--white);
+}

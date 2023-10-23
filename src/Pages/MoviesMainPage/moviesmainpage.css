@@ -1,0 +1,6 @@
+.movies-main-page {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    overflow: hidden;
+}

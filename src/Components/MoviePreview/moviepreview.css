@@ -1,0 +1,109 @@
+.movie-main-page {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+.movie-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+.movie-bg {
+    position: relative;
+    max-width: 100%;
+    width: 1100px;
+    height: 500px;
+    -webkit-user-drag: none;
+    z-index: -1;
+}
+.movie-bg::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.movie-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.movie-img {
+    width: 250px;
+}
+.movie-img img {
+    object-fit: contain;
+    width: 100%;
+    border-radius: 10px;
+}
+.movie-info-cont {
+    display: flex;
+    column-gap: 15px;
+    background-color: var(--dark-transparent);
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    padding: 1rem;
+    width: 80%;
+    transform: translateY(-50%);
+}
+.budget {
+    display: flex;
+    flex-direction: column;
+}
+.movie-overview {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.movie-overview h2 {
+    color: var(--white);
+    font-family: var(--font-family-gothic);
+    font-weight: 400;
+}
+.movie-overview > span {
+    color: var(--purple);
+    font-family: var(--font-family-neon);
+}
+.overview-details {
+    color: var(--white);
+}
+
+.original-language {
+    text-transform: uppercase;
+}
+.genres-box {
+    display: flex;
+}
+.movie-genres-list {
+    display: flex;
+    column-gap: 7px;
+}
+.movie-genres-list li {
+    cursor: pointer;
+}
+.movie-genres-list li::after {
+    content: ",";
+}
+.movie-genres-list li:last-child:after {
+    content: "";
+}
+.movie-episodes {
+    display: flex;
+    flex-direction: column;
+}
+.movie-tagline p {
+    font-size: 22px;
+    color: var(--white);
+    padding: 10px 0;
+    font-family: var(--font-family-neon);
+}
+.movie-preview-bottom {
+    display: flex;
+    width: fit-content;
+    height: 100%;
+}

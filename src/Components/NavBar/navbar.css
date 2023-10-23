@@ -1,0 +1,185 @@
+.navbar-cont {
+    display: flex;
+    background-color: var(--main-color);
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 9999999;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    justify-content: center;
+    justify-content: space-between;
+    position: sticky;
+    width: 100%;
+    top: 0;
+}
+.nav-logo {
+    background-color: var(--black);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    width: 300px;
+    height: 100%;
+    position: relative;
+    justify-content: start;
+}
+
+.nav-logo img {
+    width: 100%;
+    height: 80px;
+    object-fit: cover;
+    object-position: center;
+}
+.nav-logo-text-cont {
+    display: flex;
+    flex-direction: column;
+    font-size: 22px;
+}
+.nav-logo-text-cont span:nth-child(1) {
+    transform: translateY(10px);
+    font-family: var(--font-family-neon);
+    color: var(--white);
+}
+.nav-logo-text-cont span:nth-child(2) {
+    color: var(--purple);
+    font-family: var(--font-family-gothic);
+
+    padding: 0;
+}
+.nav-menu {
+    display: flex;
+    column-gap: 25px;
+    overflow-x: auto;
+    max-width: 800px;
+    padding: 0.5rem 0;
+}
+.nav-menu::-webkit-scrollbar {
+    width: 3px;
+    height: 2px;
+    position: relative;
+}
+.nav-menu::-webkit-scrollbar-track {
+    background: var(--dark);
+}
+.nav-menu::-webkit-scrollbar-thumb {
+    background-color: var(--purple);
+}
+.nav-menu > li {
+    position: relative;
+    padding: 0.3em 0;
+}
+.nav-menu > li a {
+    font-family: var(--font-family-neon);
+    font-size: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: var(--white);
+    white-space: nowrap;
+}
+.nav-menu > li::before,
+.nav-menu > li::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    background-color: var(--purple);
+    height: 2px;
+    transition: all 1s;
+}
+.nav-menu > li::before {
+    right: 0;
+    top: 0;
+}
+.nav-menu > li::after {
+    left: 0;
+    bottom: 0;
+}
+.nav-menu > li:hover::before,
+.nav-menu > li:hover::after {
+    width: 100%;
+}
+.nav-actions {
+    display: flex;
+}
+.nav-menu > li > a.active::after,
+.nav-menu > li > a.active::before {
+    content: "";
+    position: absolute;
+    background-color: var(--purple);
+    height: 2px;
+    width: 100%;
+}
+.nav-menu > li > a.active::after {
+    bottom: 0;
+    left: 0;
+}
+.nav-menu > li > a.active::before {
+    top: 0;
+    right: 0;
+}
+.nav-actions {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+}
+.user-act {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.user-username {
+    user-select: none;
+}
+.current-user-img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.user-menu {
+    position: absolute;
+    top: 65px;
+    background-color: var(--main-color);
+    backdrop-filter: blur(10px);
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    align-items: start;
+    justify-content: start;
+    padding: 1rem;
+    right: 0;
+    border-bottom-left-radius: 15px;
+    opacity: 0;
+    transition: all 0.5s;
+    visibility: hidden;
+    transform: translateX(300px);
+    width: 100px;
+    user-select: none;
+    height: 100vh;
+}
+.user-menu > button {
+    background-color: var(--light-transparent);
+    border: none;
+    outline: none;
+    width: 80px;
+    height: 30px;
+    color: var(--white);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 5px;
+}
+.user-menu > button:hover {
+    background-color: var(--purple);
+}
+.user-act:hover > .user-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0px);
+}

@@ -1,0 +1,99 @@
+:root {
+    --font-family-poppins: "Poppins", sans-serif;
+    --font-family-maven-pro: "Maven Pro", sans-serif;
+    --font-family-gothic: "DotGothic16", sans-serif;
+    --font-family-neon: "Tilt Neon", sans-serif;
+    --main-color: #151515;
+    --black: #101010;
+    --white: #f5f5f5;
+    --purple: #621ebb;
+    --light-purple: #621ebb84;
+    --dark-transparent: #00000052;
+    --darkest-transparent: #0000009b;
+    --light-transparent: #a6a6a618;
+}
+
+::selection {
+    background-color: var(--purple);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--main-color);
+}
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: var(--dark);
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--light-transparent);
+}
+ul,
+ol,
+dl {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+@keyframes formOppening {
+    0% {
+        transform: translateX(-50%);
+        scale: 0;
+    }
+    50% {
+        scale: 1.2;
+    }
+    100% {
+        transform: translateX(0%);
+
+        scale: 1;
+    }
+}
+
+@keyframes signErrors {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes intro {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -200%);
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@keyframes watchList {
+    0% {
+        opacity: 0;
+        transform: translateX(200%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

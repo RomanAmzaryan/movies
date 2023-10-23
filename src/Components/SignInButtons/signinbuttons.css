@@ -1,0 +1,30 @@
+.signin-buttons {
+    display: flex;
+    column-gap: 15px;
+}
+.signin-buttons button {
+    border: none;
+    outline: none;
+    max-width: 200px;
+    width: 100px;
+    height: 50px;
+    max-height: 80px;
+    border-radius: 5px;
+    background: none;
+    color: var(--white);
+    font-family: var(--font-family-neon);
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 1s;
+}
+.signin-buttons button:hover {
+    scale: 1.05;
+}
+.signin-buttons .sign-up {
+    background-color: var(--purple);
+}
+
+.signin-buttons .sign-in {
+    background-color: var(--white);
+    color: var(--purple);
+}

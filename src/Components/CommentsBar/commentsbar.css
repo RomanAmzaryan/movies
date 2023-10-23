@@ -1,0 +1,113 @@
+.commentsbar-cont {
+    width: 300px;
+    min-width: 300px;
+    background-color: var(--black);
+    color: var(--white);
+}
+.commentsbar {
+    position: sticky;
+    top: 80px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100vh;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+.commentsbar::-webkit-scrollbar {
+    width: 3px;
+}
+.commentsbar::-webkit-scrollbar-track {
+    background: var(--dark);
+}
+.commentsbar::-webkit-scrollbar-thumb {
+    background-color: var(--purple);
+}
+.commentsbar-top {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 20px 0;
+}
+.commentsbar-top form > input {
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--white);
+    position: relative;
+    color: var(--white);
+    font-family: var(--font-family-neon);
+}
+.commentsbar-top form > input::placeholder {
+    color: var(--purple);
+    font-family: var(--font-family-gothic);
+}
+.commentsbar-top form > button {
+    background: none;
+    outline: none;
+    border: none;
+    color: var(--purple);
+    position: absolute;
+    right: 55px;
+    bottom: 30px;
+    cursor: pointer;
+}
+.commentsbar-top form > button:hover{
+    scale: 1.1;
+}
+.commentsbar-bottom {
+    display: flex;
+    flex-direction: column;
+}
+
+.first-review {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+    width: 100%;
+}
+.leave-review-cont {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+}
+.leave-review-cont h2 {
+    font-family: var(--font-family-gothic);
+    text-transform: uppercase;
+    color: var(--purple);
+    font-size: 20px;
+}
+.first-review .signin-buttons {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    row-gap: 15px;
+}
+.first-review .signin-buttons button {
+    width: 300px;
+}
+.first-review h2 {
+    font-family: var(--font-family-gothic);
+    text-transform: uppercase;
+    color: var(--purple);
+}
+
+.reviews-title {
+    position: absolute;
+    top: -20px;
+    width: 100%;
+    font-size: 15px;
+    font-family: var(--font-family-neon);
+}
+.my-review {
+    /* background-color: var(--light-transparent); */
+    background-color: var(--black);
+    border: 1px solid var(--purple);
+    margin: 5px 0;
+}

@@ -1,0 +1,74 @@
+{
+  "registeredUsers": [
+    {
+      "id": 1698004593237,
+      "firstname": "Gev",
+      "lastname": "Avagian",
+      "username": "gevavagian",
+      "email": "gevavagian@mail.ru",
+      "password": "123"
+    },
+    {
+      "id": 1698062987063,
+      "firstname": "tooin.",
+      "lastname": "movies",
+      "username": "tooinmovies",
+      "email": "tooinmovies@mail.com",
+      "password": "123"
+    },
+    {
+      "id": 1698079577355,
+      "firstname": "test1",
+      "lastname": "test1",
+      "username": "test1",
+      "email": "test1@mail.ru",
+      "password": "test1"
+    }
+  ],
+  "reviews": [
+    {
+      "id": 1698004931951,
+      "movieID": 299054,
+      "content": "TOOIN !!!!!!!!!!!!!!!!!!!!",
+      "author": "GevAvagian",
+      "author_details": {
+        "id": 1698004593237,
+        "name": "GevAvagian",
+        "username": "gevavagian"
+      }
+    },
+    {
+      "id": 1698004956658,
+      "movieID": 575264,
+      "content": "TOOIN !!!!",
+      "author": "GevAvagian",
+      "author_details": {
+        "id": 1698004593237,
+        "name": "GevAvagian",
+        "username": "gevavagian"
+      }
+    },
+    {
+      "id": 1698062559903,
+      "movieID": 926393,
+      "content": "TOOIN ! ",
+      "author": "GevAvagian",
+      "author_details": {
+        "id": 1698004593237,
+        "name": "GevAvagian",
+        "username": "gevavagian"
+      }
+    },
+    {
+      "id": 1698063042075,
+      "movieID": 299054,
+      "content": "♥",
+      "author": "tooin.movies",
+      "author_details": {
+        "id": 1698062987063,
+        "name": "tooin.movies",
+        "username": "tooinmovies"
+      }
+    }
+  ]
+}

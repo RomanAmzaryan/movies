@@ -1,0 +1,43 @@
+.actor-main-info {
+    display: flex;
+    max-width: 600px;
+    flex-direction: column;
+    row-gap: 5px;
+}
+.actor-main-img {
+    float: left;
+    margin-right: 25px;
+}
+.actor-main-img img {
+    border-radius: 12px;
+}
+
+.alternative-names {
+    display: flex;
+    flex-wrap: wrap;
+}
+.alternative-names li:after {
+    content: ", ";
+}
+.alternative-names li:last-child::after {
+    content: "";
+}
+span {
+    color: var(--purple);
+    font-family: var(--font-family-neon);
+}
+.overview-details {
+    color: var(--white);
+    font-family: var(--font-family-neon);
+}
+.actor-biograpy-cont {
+    margin-top: 15px;
+}
+.actor-biography p {
+    text-align: start;
+    width: 800px;
+    max-height: fit-content;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    padding: 0.5rem;
+}
